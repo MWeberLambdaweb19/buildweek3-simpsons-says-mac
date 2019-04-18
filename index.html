@@ -1,57 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Simpsons Says!</title>
+        <title>Simpsons Says! | Main Page!</title>
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-        <link href="https://fonts.googleapis.com/css?family=Dokdo|Permanent+Marker" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet">  
         <link rel="stortcut icon" href="./assets/simpsons_donut_icon.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-        <div class="main">
             <header>
+                <img class="logo" src="assets/logo-2-taslim-yakub.png" alt="Simpsons Says Logo by Taslim Yakub">
                 <nav>
-                    <img class="logo" src="assets/simpson_says_logo_by_Taslim_Yakub.png" alt="Simpsons Says Logo by Taslim Yakub">
-                    <a href="#">Main Page</a>
-                    <a href="#">Our Favorite Characters</a>
-                    <a href="#">About Us</a>
-                    <button class="login">Log In!</button>
+                    <a href="index.html">Main Page</a>
+                    <a href="about.html">About Us</a>
+                    <a href="https://simpsonssays.netlify.com/">Log In!</a>
                 </nav>
             </header>
             <section class="cta">
-                <h1>Enter a Quote Here!</h1><br>
-                <h4>Our database will search for the closest episode match</h4>
+                <div class="cta-container">
+                    <h1>Sign up for FREE today!</h1><br>
+                    <h4>Can't find the quote you're looking for?</h4>
+                    <h4>Our database will do the hard work for you!</h4>
+                    <a href="https://simpsonssays.netlify.com/"><button>Sign Up!</button></a>
+                </div>
+                <img src="assets/homer_woohoo.jpg" class="phimg" data-aos="flip-left" data-aos-delay="100" data-aos-animation="1000"/>
             </section>
-            <section class="input">
-                <input class="search" type="text" placeholder="D'oh!" value="">
+            <section class="content">
+                <h2 class="content-header offset-header">Product Features!</h2>
+                <div class="content-container">
+                    <img src="assets/homer_eating.jpeg" class="phimg" data-aos="flip-right" data-aos-delay="100" data-aos-animation="1000"/>
+                    <div class="blurb">
+                        <h3>Quote Search</h3>
+                        <p>Having trouble remembering a specific quote? Want to pull a few zingers at tonight's Simpsons' theme
+                            party? Simply whip out our React App, and give us a few parameters about the quote, and we'll give you
+                            the closest returned results possible!
+                        </p>
+                        <h3>Quote Generator</h3>
+                        <p>Do you love Homer Simpson, but don't find the rest of the family funny? Is Barney Gumble your cup of tea, but 
+                            Moe Syzlak is a hard pass? Use our Quote Generator, and search for quotes from eacy individual cast member!
+                            You'll be delighted at its ease of use!
+                        </p>
+                    </div>
+                </div>
             </section>
-            <section class="output">
-                <div class="quote-header">Your quote here!</div>
-                <div class="quote-container hidden">Drop down box!</div>
+            <section class="content offset">
+                <h2 class="content-header">Other Benefits!</h2>
+                <div class="content-container">
+                    <div class="blurb">
+                    <h3>FREE Registration!</h3>
+                    <p>Our service is lifetime membership at absolutely ZERO cost to you! Signing up for an account at the height
+                        of the Thirtieth Season will guarantee you an account when the series reaches its zenith at the Eighty-Fifth Season!
+                        Sign up today and be prepared for decades of more quotes! 
+                    </p>
+                    <h3>Quote Favoriting</h3>
+                    <p>Is it an absolute must to save a quote? Well, you've got it! Favorite as many quotes as you like, so that you
+                        can always return back to it at any point, any time! No more writing things down!
+                    </p>
+                    </div>
+                    <img src="assets/homer_sleeping.jpg" class="phimg" data-aos="flip-right" data-aos-delay="100" data-aos-animation="1000"/>
+                </div>
             </section>
-            <section class="testimony">
-                <h2>Customer Testimonials!</h2>
-                <div class="Customer">Matt Groening</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
-                <div class="Customer">Loren Bouchard</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
-                <div class="Customer">Seth McFarlene</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
-                <div class="Customer">Justin Roiland</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
-                <div class="Customer">Dan Harmon</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
-            </section>
+            <section class="content">
+                    <h2 class="content-header">Customer Testimonials!</h2>
+                    <div class="content-container">
+                        <div class="quote1" id="mobilehidden">
+                        <h3>Mark Grinner</h3>
+                        <p>"I've been watching the Simpsons since the Tracey Ullman days, and having this app on me is a nice
+                            security blanket that reminds me of better times."</p>
+                        <h3>Larry Swiss-Chard</h3>
+                        <p>"I'm on my fourth attempt of writing an animated television classic that will stand the test of time
+                            just like the Simpsons, and whenever I need inspiration for a quote, I use this app! Move over, Jumping
+                            Doodles, THIS is the new standard for classic apps!"</p>
+                        <h3>Stan MkFreelane</h3>
+                        <p>"I'm currently writing my own comic series and my entire cast is basically the entirety of the Simpsons,
+                            100% plagiarized. Thanks, Simpsons Says!"</p>
+                        </div>
+                        <div class="quote2">
+                        <h3>Jerry Rollend</h3>
+                        <p>"Great for late nights when my cable is out and MeTube isn't loading my favorite episode of The Simpsons,
+                            the Simpsons Says app is almost as good as watching the show itself!"</p>
+                        <h3>Don Harming</h3>
+                        <p>"When I'm blue, I put Simspons Says on queue!"</p>
+                        </div>
+                    </div>
+                </section>
+        <footer>
             <section class="contact">
-                    <h4>Contact Us!</h4>
-                    <p>104.27.173.20</p>
-                    <p>contact@lambdaschool.com</p>
-                    <p>KL5-555-3226</p>
+                <h4>Contact Us!</h4>
+                <p>104.27.173.20</p>
+                <p>contact@lambdaschool.com</p>
+                <p>KL5-555-3226</p>
             </section>
-            <footer>
-                <p>Simpsons Says! &copy; Lambda School Build Week | The Simspons &copy; Twentieth Century Fox</p>
-            </footer>
+            <section class="copyright">
+            <p>Simpsons Says! &copy; Lambda School Build Week | The Simpsons &copy; Twentieth Century Fox</p>
+            </section>
+        </footer>
         </div>
-        </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     </body>
 </html>

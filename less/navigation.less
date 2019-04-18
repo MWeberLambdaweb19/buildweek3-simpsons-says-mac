@@ -1,44 +1,145 @@
 header{
+    background-image: url("../assets/SIMPSONS_banner.jpg");
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        width: 500px;
+        padding: 10px;
+        height: 150px;
+        border-radius: 15%;
+        border: 5px solid black;
+        margin: 10px 0 10px 100px;
+        background: white;
+    }
     nav{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        // border: 1px solid red;
-        border-bottom: 2px dashed black;
-        background: yellow;
-        margin-bottom: 10px;
-        .logo {
-            width: 165px;
-            height: 155px;
-        }
         a {
             border: 5px solid black;
             border-radius: 10%;
-            background: yellow;
+            background: #ffd700;
             padding: 10px;
             margin: 0 20px 0 20px;
             text-decoration: none;
             font-size: 2rem;
-            color: black;
+            color: #000000;
         }
         a:hover{
-            color: yellow;
-            background:black;
-        }
-        .login {
-            border: 5px solid black;
-            border-radius: 10%;
-            background: yellow;
-            padding: 10px;
-            margin: 0 20px 0 20px;
-            text-decoration: none;
-            font-size: 2rem;
-            color: black;
-        }
-        .login:hover {
-            color: yellow;
-            background:black;
+            color: #abcdf1;
+            background:#ffffff;
+            border: 5px solid #abdcf1;
         }
     }
 }
-    
+// Tablet stylings begin here!
+@media @tablet {
+    header {
+        background-image: url("../assets/SIMPSONS_banner.jpg");
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            width: 500px;
+            padding: 10px;
+            height: 150px;
+            margin: 10px 0 10px 100px;
+            border-radius: 15%;
+            background: white;
+            margin-right: 100px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            a {
+                text-align: center;
+                width: 180px;
+                height: 60px;
+                border: 5px solid black;
+                border-radius: 10%;
+                background: #ffd700;
+                padding: 10px;
+                margin: 0 20px 0 20px;
+                text-decoration: none;
+                font-size: 3rem;
+                color: #000000;
+            }
+            a:hover{
+                color: #abcdf1;
+                background:#ffffff;
+                border: 5px solid #abdcf1;
+            }
+        }
+    }
+}
+
+
+// Mobile stylings begin here!
+@media @mobile {
+header {
+    background-image: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    .logo {
+        width: 325px;
+        padding: 10px;
+        height: 150px;
+        border-radius: 15%;
+        background: white;
+        margin-right: 100px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0;
+        width: 100%;
+        a {
+            margin: 0;
+            width: 100%;
+            height: 25%;
+            border-radius: 0%;
+            border-left: none;
+            border-right: none;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background: #ffd700;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 4rem;
+            color: #000000;
+        }
+        a:first-child{
+            border-top: 4px solid black;
+        }
+        a:first-child:hover{
+            border-top: 4px solid black;
+        }
+        a:last-child{
+            border-bottom: 4px solid black;
+        }
+        a:last-child:hover{
+            border-bottom: 4px solid black;
+        }
+        a:hover{
+            color: #abcdf1;
+            background:#ffffff;
+            border-radius: 0%;
+            border-left: none;
+            border-right: none;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+    }
+    }
+}
